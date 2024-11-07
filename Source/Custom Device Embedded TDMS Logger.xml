@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomDevice xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="Custom Device.xsd">
+  <XSDVersion Major="2010" Minor="0" Fix="0" Build="0" />
+  <AddMenu>
+    <eng>UKAEA::Embedded TDMS Logger</eng>
+    <loc>UKAEA::Embedded TDMS Logger</loc>
+  </AddMenu>
+  <Version>1.0.0</Version>
+  <Type>Inline HW Interface</Type>
+  <MaxOccurrence>-1</MaxOccurrence>
+  <MainPageGUID>daea7e29-2fc3-47a8-981c-469a5cb8af3b</MainPageGUID>
+  <InitializationVI>
+    <Type>Action</Type>
+    <Item2Launch>
+      <Type>To Common Doc Dir</Type>
+      <Path>Custom Devices\Embedded TDMS Logger\Windows\Embedded TDMS Logger Configuration.llb\Initialization VI.vi</Path>
+    </Item2Launch>
+  </InitializationVI>
+  <CustomDeviceVI>
+    <SourceDistribution>
+      <Source>
+        <SupportedTarget>Windows</SupportedTarget>
+        <Source>
+          <Type>To Common Doc Dir</Type>
+          <Path>Custom Devices\Embedded TDMS Logger\Windows\Embedded TDMS Logger Engine Windows.llb\RT Driver VI.vi</Path>
+        </Source>
+        <RealTimeSystemDestination>c:\ni-rt\VeriStand\Custom Devices\Embedded TDMS Logger\Embedded TDMS Logger Engine Windows.llb\RT Driver VI.vi</RealTimeSystemDestination>
+      </Source>
+      <Source>
+        <SupportedTarget>Linux_x64</SupportedTarget>
+        <Source>
+          <Type>To Common Doc Dir</Type>
+          <Path>Custom Devices\Embedded TDMS Logger\Linux_x64\Embedded TDMS Logger Engine Linux64.llb\RT Driver VI.vi</Path>
+        </Source>
+        <RealTimeSystemDestination>c:\ni-rt\VeriStand\Custom Devices\Embedded TDMS Logger\Embedded TDMS Logger Engine Linux64.llb\RT Driver VI.vi</RealTimeSystemDestination>
+      </Source>
+    </SourceDistribution>
+  </CustomDeviceVI>
+  <Dependencies />
+  <Pages>
+    <Page>
+      <Name>
+        <eng>Embedded TDMS Logger</eng>
+        <loc>Embedded TDMS Logger</loc>
+      </Name>
+      <GUID>daea7e29-2fc3-47a8-981c-469a5cb8af3b</GUID>
+      <Glyph>
+        <Type>To Application Data Dir</Type>
+        <Path>System Explorer\Glyphs\file.png</Path>
+      </Glyph>
+      <Item2Launch>
+        <Type>To Common Doc Dir</Type>
+        <Path>Custom Devices\Embedded TDMS Logger\Windows\Embedded TDMS Logger Configuration.llb\Main Page.vi</Path>
+      </Item2Launch>
+      <RunTimeMenu>
+        <MenuItem>
+          <GUID>0e7046b1-71f5-442e-935d-af9826c55373</GUID>
+          <Type>Action</Type>
+          <Execution>silent</Execution>
+          <Name>
+            <eng>Add New Group</eng>
+            <loc>Add New Group</loc>
+          </Name>
+          <Item2Launch>
+            <Type>To Common Doc Dir</Type>
+            <Path>Custom Devices\Embedded TDMS Logger\Windows\Embedded TDMS Logger Configuration.llb\Add New Group.vi</Path>
+          </Item2Launch>
+        </MenuItem>
+		<MenuItem>
+			<GUID>126538f8-e67c-4b54-bae0-a6de3c46a966</GUID>
+			<Type>Action</Type>
+			<Name>
+				<eng>Import Configuration</eng>
+				<loc>Import Configuration</loc>
+			</Name>
+			<Item2Launch>
+				<Type>To Common Doc Dir</Type>
+				<Path>Custom Devices\Embedded TDMS Logger\Windows\Embedded TDMS Logger Configuration.llb\Import Configuration.vi</Path>
+			</Item2Launch>
+		</MenuItem>
+		<MenuItem>
+			<GUID>38254cc0-9acc-43c3-9ceb-ba0b0779ae06</GUID>
+			<Type>Action</Type>
+			<Name>
+				<eng>Export Configuration</eng>
+				<loc>Export Configuration</loc>
+			</Name>
+			<Item2Launch>
+				<Type>To Common Doc Dir</Type>
+				<Path>Custom Devices\Embedded TDMS Logger\Windows\Embedded TDMS Logger Configuration.llb\Export Configuration.vi</Path>
+			</Item2Launch>
+		</MenuItem>
+		<MenuItem>
+			<GUID>eb8898a8-5f5c-4d3f-90e1-576cfb66fec4</GUID>
+			<Type>Action</Type>
+			<Name>
+				<eng>Disable</eng>
+				<loc>Disable</loc>
+			</Name>
+			<Item2Launch>
+				<Type>To Common Doc Dir</Type>
+				<Path>Custom Devices\Embedded TDMS Logger\Windows\Embedded TDMS Logger Configuration.llb\EnableDisable - Right Click.vi</Path>
+			</Item2Launch>
+		</MenuItem>
+      </RunTimeMenu>
+      <ActionVIOnCompile>
+        <Type>To Common Doc Dir</Type>
+        <Path>Custom Devices\Embedded TDMS Logger\Windows\Embedded TDMS Logger Configuration.llb\ActionVIOnCompile.vi</Path>
+      </ActionVIOnCompile>
+    </Page>
+    <Page>
+      <Name>
+        <eng>Embedded TDMS Logger</eng>
+        <loc>Embedded TDMS Logger</loc>
+      </Name>
+      <GUID>6082188f-aa37-4fcf-82de-06f236ba4a90</GUID>
+      <Glyph>
+        <Type>To Application Data Dir</Type>
+        <Path>System Explorer\Glyphs\daq_disabled.png</Path>
+      </Glyph>
+      <Item2Launch>
+        <Type>To Common Doc Dir</Type>
+        <Path>Custom Devices\Embedded TDMS Logger\Windows\Embedded TDMS Logger Configuration.llb\Main Page.vi</Path>
+      </Item2Launch>
+      <RunTimeMenu>
+		<MenuItem>
+			<GUID>eb8898a8-5f5c-4d3f-90e1-576cfb66fec4</GUID>
+			<Type>Action</Type>
+			<Name>
+				<eng>Enable</eng>
+				<loc>Enable</loc>
+			</Name>
+			<Item2Launch>
+				<Type>To Common Doc Dir</Type>
+				<Path>Custom Devices\Embedded TDMS Logger\Windows\Embedded TDMS Logger Configuration.llb\EnableDisable - Right Click.vi</Path>
+			</Item2Launch>
+		</MenuItem>
+      </RunTimeMenu>
+    </Page>
+	<Page>
+      <Name>
+        <eng>Group Level</eng>
+        <loc>Group Level</loc>
+      </Name>
+      <GUID>ad36ff05-e498-4721-9ffb-d3fa67663aa8</GUID>
+      <Glyph>
+			<Type>To Application Data Dir</Type>
+			<Path>System Explorer\Glyphs\ChnGroup.png</Path>
+		</Glyph>
+      <Item2Launch>
+        <Type>To Common Doc Dir</Type>
+		<Path>Custom Devices\Embedded TDMS Logger\Windows\Embedded TDMS Logger Configuration.llb\Group Level.vi</Path>
+      </Item2Launch>
+	  <RunTimeMenu>
+        <MenuItem>
+          <GUID>5368b766-1be3-4a3d-9c4b-f7a7664c22b1</GUID>
+          <Type>Action</Type>
+          <Execution>silent</Execution>
+          <Name>
+            <eng>Add New Channel</eng>
+            <loc>Add New Channel</loc>
+          </Name>
+          <Item2Launch>
+            <Type>To Common Doc Dir</Type>
+            <Path>Custom Devices\Embedded TDMS Logger\Windows\Embedded TDMS Logger Configuration.llb\Add New Channel.vi</Path>
+          </Item2Launch>
+        </MenuItem>
+		<MenuItem>
+          <GUID>b553a451-a3e4-409a-8882-e3f6937472f6</GUID>
+          <Type>Action</Type>
+          <Execution>silent</Execution>
+          <Name>
+            <eng>Add New Waveform Channel</eng>
+            <loc>Add New Waveform Channel</loc>
+          </Name>
+          <Item2Launch>
+            <Type>To Common Doc Dir</Type>
+            <Path>Custom Devices\Embedded TDMS Logger\Windows\Embedded TDMS Logger Configuration.llb\Add New Waveform Channel.vi</Path>
+          </Item2Launch>
+        </MenuItem>
+		<MenuItem>
+          <GUID>becc3254-8579-46a1-a4bd-9e0bcf8e5491</GUID>
+          <Type>Action</Type>
+          <Execution>silent</Execution>
+          <Name>
+            <eng>Delete Group</eng>
+            <loc>Delete Group</loc>
+          </Name>
+          <Item2Launch>
+            <Type>To Common Doc Dir</Type>
+            <Path>Custom Devices\Embedded TDMS Logger\Windows\Embedded TDMS Logger Configuration.llb\Delete Group.vi</Path>
+          </Item2Launch>
+        </MenuItem>
+      </RunTimeMenu>
+    </Page>
+<Page>
+      <Name>
+        <eng>Channel Level</eng>
+        <loc>Channel Level</loc>
+      </Name>
+      <GUID>22f26562-5b63-4f30-88d3-24dae5cd9a1b</GUID>
+      <Glyph>
+			<Type>To Application Data Dir</Type>
+			<Path>System Explorer\Glyphs\channel.png</Path>
+		</Glyph>
+      <Item2Launch>
+        <Type>To Common Doc Dir</Type>
+		<Path>Custom Devices\Embedded TDMS Logger\Windows\Embedded TDMS Logger Configuration.llb\Channel Level.vi</Path>
+      </Item2Launch>
+	  <RunTimeMenu>
+        <MenuItem>
+          <GUID>01a0d043-1175-41af-a8ca-dfc710428d8a</GUID>
+          <Type>Action</Type>
+          <Execution>silent</Execution>
+          <Name>
+            <eng>Delete Channel</eng>
+            <loc>Delete Channel</loc>
+          </Name>
+          <Item2Launch>
+            <Type>To Common Doc Dir</Type>
+            <Path>Custom Devices\Embedded TDMS Logger\Windows\Embedded TDMS Logger Configuration.llb\Delete Channel.vi</Path>
+          </Item2Launch>
+        </MenuItem>
+      </RunTimeMenu>
+    </Page>
+	<Page>
+      <Name>
+        <eng>Waveform Channel</eng>
+        <loc>Waveform Channel</loc>
+      </Name>
+      <GUID>d4831e4e-4340-44f6-a949-9831e2f55b5e</GUID>
+      <Glyph>
+			<Type>To Application Data Dir</Type>
+			<Path>System Explorer\Glyphs\ai wfm.png</Path>
+		</Glyph>
+      <Item2Launch>
+        <Type>To Common Doc Dir</Type>
+		<Path>Custom Devices\Embedded TDMS Logger\Windows\Embedded TDMS Logger Configuration.llb\Waveform Channel Level.vi</Path>
+      </Item2Launch>
+	  <RunTimeMenu>
+        <MenuItem>
+          <GUID>a2204964-d584-465a-b1e3-f0e4883d8579</GUID>
+          <Type>Action</Type>
+          <Execution>silent</Execution>
+          <Name>
+            <eng>Delete Channel</eng>
+            <loc>Delete Channel</loc>
+          </Name>
+          <Item2Launch>
+            <Type>To Common Doc Dir</Type>
+            <Path>Custom Devices\Embedded TDMS Logger\Windows\Embedded TDMS Logger Configuration.llb\Delete Channel.vi</Path>
+          </Item2Launch>
+        </MenuItem>
+      </RunTimeMenu>
+    </Page>
+	<Page>
+      <Name>
+        <eng>System Group</eng>
+        <loc>System Group</loc>
+      </Name>
+      <GUID>99b29b88-0b7d-4492-bd9c-0c837600324e</GUID>
+      <Glyph>
+			<Type>To Application Data Dir</Type>
+			<Path>System Explorer\Glyphs\sysmappings.png</Path>
+		</Glyph>
+      <Item2Launch>
+        <Type>To Common Doc Dir</Type>
+		<Path>Custom Devices\Embedded TDMS Logger\Windows\Embedded TDMS Logger Configuration.llb\SystemGroupPage.vi</Path>
+      </Item2Launch>
+    </Page>
+	<Page>
+      <Name>
+        <eng>System Channel</eng>
+        <loc>System Channel</loc>
+      </Name>
+      <GUID>51dcafbf-861c-44c4-8937-c842b97d4e50</GUID>
+      <Glyph>
+			<Type>To Application Data Dir</Type>
+			<Path>System Explorer\Glyphs\system variable.png</Path>
+	  </Glyph>
+	  <Item2Launch>
+        <Type>To Common Doc Dir</Type>
+		<Path>Custom Devices\Embedded TDMS Logger\Windows\Embedded TDMS Logger Configuration.llb\SystemChannel.vi</Path>
+      </Item2Launch>
+    </Page>
+  </Pages>
+  <CustomXML>
+    <Dummy></Dummy>
+  </CustomXML>
+</CustomDevice>
