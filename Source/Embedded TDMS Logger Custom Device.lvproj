@@ -80,6 +80,11 @@
 		<Property Name="server.viscripting.showScriptingOperationsInContextHelp" Type="Bool">false</Property>
 		<Property Name="server.viscripting.showScriptingOperationsInEditor" Type="Bool">false</Property>
 		<Property Name="specify.custom.address" Type="Bool">true</Property>
+		<Item Name="API" Type="Folder">
+			<Item Name="System Definition API" Type="Folder">
+				<Item Name="CreateCustomDevice.vi" Type="VI" URL="../API/System Definition API/CreateCustomDevice.vi"/>
+			</Item>
+		</Item>
 		<Item Name="Help" Type="Folder" URL="../Help">
 			<Property Name="NI.DISK" Type="Bool">true</Property>
 		</Item>
