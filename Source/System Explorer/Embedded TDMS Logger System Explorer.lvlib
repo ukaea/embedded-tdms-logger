@@ -47,4 +47,7 @@
 		</Item>
 		<Item Name="Types" Type="Folder"/>
 	</Item>
+	<Item Name="CompileActionSettings.vi" Type="VI" URL="../SubVIs/CompileActionSettings.vi"/>
+	<Item Name="LoadActions.vi" Type="VI" URL="../SubVIs/LoadActions.vi"/>
+	<Item Name="ToggleCommand.vi" Type="VI" URL="../SubVIs/ToggleCommand.vi"/>
 </Library>

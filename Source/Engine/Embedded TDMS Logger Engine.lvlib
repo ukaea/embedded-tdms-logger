@@ -13,5 +13,6 @@
 	</Item>
 	<Item Name="Types" Type="Folder"/>
 	<Item Name="Channel Manager.lvclass" Type="LVClass" URL="../Channel Reader/Channel Manager.lvclass"/>
+	<Item Name="NewErrorCheck.vi" Type="VI" URL="../NewErrorCheck.vi"/>
 	<Item Name="RT Driver VI.vi" Type="VI" URL="../RT Driver VI.vi"/>
 </Library>
