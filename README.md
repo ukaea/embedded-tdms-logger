@@ -19,6 +19,7 @@ The Embedded TDMS Logger Custom Device is a plugin for logging data directly on 
 - Control of the grouping of channels within the TDMS file
 - Control to segment files either by size or time
 - Triggering functionality (re-triggerable)
+- Execute a shell command when logging begins, files are segmented (for instance, to move off to a server), or when an error occurs.
 - Can log immediately upon deployment (setup trigger to have a default value greater than zero).
 - Ability to name files based on the time as formatted, specified by the user.
 
